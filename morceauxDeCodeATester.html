@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Communication client - Calling Sample  </title>
+  <style>
+    #action , #token-submit, #call-button, #hang-up-button, #call-phone-button, #hang-up-phone-button{
+      font-size: large;
+      border-radius: 13px;
+      width : 153px;
+      text-align: center;
+    }
+
+    input{
+      width: 50%;
+      height : 35px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+    <!-- Section Essai -->
+    <h1> Essaie de creation de button </h1>
+    <button id="action" onclick="fnAction()">Click me</button>
+   
+    <!-- Section Essai-->
+    <h3>Azure Communication Services</h3>
+
+    <h4>Calling Quickstart</h4>
+
+    <input id="token-input" type="text" placeholder="User access token" style="margin-bottom:1em; width: 200px;" />
+    <button id="token-submit" type="button">
+      Submit
+    </button>
+
+    <input id="callee-id-input" type="text" placeholder="Who would you like to call?"
+      style="margin-bottom:1em; width: 200px; display: block;" />
+    <div>
+      <button id="call-button" type="button" disabled="true">
+        Start Call
+      </button>
+      &nbsp;
+      <button id="hang-up-button" type="button" disabled="true">
+        Hang Up
+      </button>
+    </div>
+
+    <!-- Second essai -->
+
+    <h4>Azure Communication Services</h4>
+    <h1>Calling Quickstart</h1>
+    <input 
+      id="callee-phone-input"
+      type="text"
+      placeholder="Who would you like to call?"
+      style="margin-bottom:1em; width: 230px;"
+    />
+    <div>
+      <button id="call-phone-button" type="button">
+        Start Call
+      </button>
+      &nbsp;
+      <button id="hang-up-phone-button" type="button" disabled="true">
+        Hang Up
+      </button>
+    </div>
+
+    <!-- commande à saisir -->
+    <!-- "npm init -y"
+      npm install @azure/communication-common --save
+      npm install @azure/communication-calling --save
+      npm install parcel --save-dev
+
+      execute
+      npx parcel index.html
+      access to http://localhost:1234/
+    -->
+  
+    
+
+  <!-- Les scripts javascript sont toujours positionnés à la fin d'une page web -->
+  <!-- Que cela soit des liens de script vers le web  -->
+  <!-- Ou des liens vers un fichier js-->
+  <!-- Script js-->
+  <script>
+
+    // Cette ligne recupera le text contenu dans le button oû "id=action"
+    // et l'affectera à la variable text
+    var text = document.getElementById("action").innerHTML;
+
+    function fnAction(){
+      // Ici, vous verrez dans la console les texts au sein de votre navigateur 
+      console.log("Executing action");
+      console.log(text);
+    }
+
+  </script>
+  <script src="./app.js"></script>
+
+</body>
+</html>
