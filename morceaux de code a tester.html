@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Function not defined</title>
+  </head>
+  <body>
+    <button id="action" onclick="fnAction()">Click me</button>
+    <script type="text/javascript">
+      document.getElementById("action")); // extra ')' here
+      function fnAction(){
+        console.log("Executing action");
+      }
+    </script>
+  </body>
+</html>
+
+
+// script.js
+function fnAction() {
+  console.log("executing action");
+}
+
+<body>
+  <h1>Load script demo</h1>
+  <script type="text/javascript">
+    fnAction();
+    // Uncaught ReferenceError: fnAction is not defined
+  </script>
+  <script src="script.js"></script>
+</body>
+
+
+<head>
+  <title>Function not defined</title>
+  <script type="text/javascript">
+    fnAction();
+  </script>
+  <script src="script.js"></script>
+</head>
+
+
+<head>
+  <title>Function not defined</title>
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    fnAction();
+  </script>
+</head>
