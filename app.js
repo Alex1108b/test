@@ -17,8 +17,8 @@ async function init() {
 
 init();
 
-// Demarrer un appel
 
+// Demarrer un appel
 callPhoneButton.addEventListener("click", () => {
     // start a call to phone
     const phoneToCall = calleePhoneInput.value;
@@ -30,8 +30,8 @@ callPhoneButton.addEventListener("click", () => {
     callPhoneButton.disabled = true;
   });
 
-// Mettre fin à un appel 
 
+// Mettre fin à un appel 
 hangUpPhoneButton.addEventListener("click", () => {
     // end the current call
     call.hangUp({

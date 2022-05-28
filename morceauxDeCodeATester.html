@@ -60,7 +60,12 @@
       style="margin-bottom:1em; width: 230px;"
     />
     <div>
-      <button id="call-phone-button" onclick="afficheNum()" type="button">
+      <!-- 
+        Si vous chercher à voir le numéro appeler comme un modal
+        inserer ceci << onclick="afficheNum() comme attribut pour >> "
+        pour le button Start Call en bas
+      -->
+      <button id="call-phone-button"  type="button">
         Start Call
       </button>
       &nbsp;
@@ -77,10 +82,13 @@
 
       execute
       npx parcel index.html
-      access to http://localhost:1234/
     -->
   
-    
+    <!-- Ces deuxlignes de codes justifie le FloattingActionButton of Call qui
+    se trouve au bottom of the page -->
+    <!-- Pour gérer ces genres de services vous avez besoin de vous soouscrire -->
+    <div class="elfsight-app-cd261e67-aa8d-422e-9ab3-816af3fdbe91"></div>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
   <!-- Les scripts javascript sont toujours positionnés à la fin d'une page web -->
   <!-- Que cela soit des liens de script vers le web  -->

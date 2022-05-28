@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex1108b/test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex1108b/test/issues"
+  },
+  "homepage": "https://github.com/Alex1108b/test#readme",
+  "dependencies": {
+    "@azure/communication-calling": "^1.4.4",
+    "@azure/communication-common": "^2.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  }
+}
