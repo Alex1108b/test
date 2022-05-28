@@ -53,13 +53,14 @@
     <h4>Azure Communication Services</h4>
     <h1>Calling Quickstart</h1>
     <input 
+      name="callee-phone-input"
       id="callee-phone-input"
       type="text"
       placeholder="Who would you like to call?"
       style="margin-bottom:1em; width: 230px;"
     />
     <div>
-      <button id="call-phone-button" type="button">
+      <button id="call-phone-button" onclick="afficheNum()" type="button">
         Start Call
       </button>
       &nbsp;
@@ -97,6 +98,10 @@
       console.log(text);
     }
 
+    function afficheNum(){
+      var numero = document.getElementById("callee-phone-input").value;
+      alert(numero);
+    }
   </script>
   <script src="./app.js"></script>
 
